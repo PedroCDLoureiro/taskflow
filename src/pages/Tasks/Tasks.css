@@ -15,27 +15,6 @@
     gap: 12px;
 }
 
-.task-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    background: #ffffff;
-}
-
-.task-item__title {
-    margin-bottom: 4px;
-    font-size: 16px;
-}
-
-.task-item__description {
-    color: #6b7280;
-    font-size: 13px;
-}
-
 .task-item__status {
     font-size: 14px;
 }
