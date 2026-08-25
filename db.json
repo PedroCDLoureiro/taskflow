@@ -1,0 +1,58 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Criar página de login",
+            "description": "Implementar formulário e validações da página de login.",
+            "status": "in_progress",
+            "priority": "high",
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "title": "Corrigir menu mobile",
+            "description": "Ajustar comportamento da navegação em dispositivos móveis.",
+            "status": "completed",
+            "priority": "medium",
+            "userId": 2
+        },
+        {
+            "id": 3,
+            "title": "Integrar API de usuários",
+            "description": "Consumir endpoint de usuários e exibir os responsáveis.",
+            "status": "pending",
+            "priority": "high",
+            "userId": 1
+        },
+        {
+            "id": 4,
+            "title": "Criar dashboard",
+            "description": "Implementar cards com indicadores das tarefas.",
+            "status": "pending",
+            "priority": "low",
+            "userId": 3
+        },
+        {
+            "id": 5,
+            "title": "Adicionar testes",
+            "description": "Criar testes dos principais componentes da aplicação.",
+            "status": "in_progress",
+            "priority": "medium",
+            "userId": 2
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Flávia Silva"
+        },
+        {
+            "id": 2,
+            "name": "Carlos Souza"
+        },
+        {
+            "id": 3,
+            "name": "Mariana Lima"
+        }
+    ]
+}
