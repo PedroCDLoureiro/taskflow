@@ -1,21 +1,21 @@
-import type { ReactNode } from 'react';
+import { Outlet } from 'react-router-dom';
 
 import { Header } from '../../components/Header/Header';
 import { Sidebar } from '../../components/Sidebar/Sidebar';
 
 import './DashboardLayout.css';
 
-interface DashboardLayoutProps {
-    children: ReactNode;
-}
-
-export function DashboardLayout({ children }: DashboardLayoutProps) {
+export function DashboardLayout() {
     return (
         <div className="dashboard-layout">
             <Sidebar />
+
             <div className="dashboard-layout__content">
                 <Header />
-                <main className="dashboard-layout__main">{children}</main>
+
+                <main className="dashboard-layout__main">
+                    <Outlet />
+                </main>
             </div>
         </div>
     );

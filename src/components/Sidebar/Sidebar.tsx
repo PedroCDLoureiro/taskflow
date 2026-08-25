@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './Sidebar.css';
 
 export function Sidebar() {
@@ -6,21 +8,33 @@ export function Sidebar() {
             <div className="sidebar__logo">TaskFlow</div>
 
             <nav className="sidebar__nav">
-                <a href="#" className="sidebar__link sidebar__link--active">
+                <NavLink
+                    to="/"
+                    end
+                    className={({ isActive }) =>
+                        `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
+                    }
+                >
                     Dashboard
-                </a>
+                </NavLink>
 
-                <a href="#" className="sidebar__link">
+                <NavLink
+                    to="/projects"
+                    className={({ isActive }) =>
+                        `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
+                    }
+                >
                     Projetos
-                </a>
+                </NavLink>
 
-                <a href="#" className="sidebar__link">
+                <NavLink
+                    to="/tasks"
+                    className={({ isActive }) =>
+                        `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
+                    }
+                >
                     Tarefas
-                </a>
-
-                <a href="#" className="sidebar__link">
-                    Equipe
-                </a>
+                </NavLink>
             </nav>
         </aside>
     );
